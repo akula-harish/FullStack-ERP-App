@@ -1,0 +1,27 @@
+{
+  "name": "daawat",
+  "version": "0.0.1",
+  "description": "This is a food delivery app",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node ./build/index.js",
+    "build": "tsc -p ./",
+    "dev:server": "nodemon --watch './**/*.ts' --exec 'ts-node' src/index.ts",
+    "dev": "ts-node-dev --respawn ./src/index.ts"
+  },
+  "author": "Harish.akula",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.1",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
